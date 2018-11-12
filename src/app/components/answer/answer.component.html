@@ -1,0 +1,6 @@
+<mat-card [ngStyle]="calcStyle()" (click)="onClick($event)">
+  <img class="tinyimg" *ngIf="result === undefined" src="assets/img/white_blank.png">
+  <img class="tinyimg" *ngIf="result !== undefined" src="assets/img/Group{{ result === false ? ' 3' : '' }}.png">
+  {{ text | fixQuotes }}
+  <img class="tinyimg" src="assets/img/white_blank.png">
+</mat-card>

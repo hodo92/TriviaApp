@@ -1,0 +1,25 @@
+/deep/ .mat-horizontal-stepper-header-container {
+  margin: auto;
+}
+
+/deep/ .mat-step-header {
+  pointer-events: none !important;
+  height: 30px;
+  padding: 0 24px !important;
+}
+
+/deep/ .mat-step-icon {
+  color: transparent !important;
+  height: 15px !important;
+  width: 15px !important;
+}
+
+/deep/ .mat-step-icon-not-touched {
+  color: transparent !important;
+  height: 15px !important;
+  width: 15px !important;
+}
+
+/deep/ .mat-stepper-horizontal-line {
+  display: none;
+}

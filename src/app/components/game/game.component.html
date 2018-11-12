@@ -1,0 +1,12 @@
+<div class="row justify-content-md-center">
+  <div class="col-lg-8 col-md-8">
+    <mat-horizontal-stepper [linear]="isStepperLinear" #stepper>
+      <ng-template matStepperIcon="done"> </ng-template>
+      <ng-template matStepperIcon="edit"> </ng-template>
+      <button mat-raised-button color="accent"></button>
+      <mat-step *ngFor="let question of questions; let i = index" editable="false" label="">
+        <app-question [question]="question" [num]="i" (next)="continueClicked(i)" (restart)="restart()"></app-question>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </div>
+</div>

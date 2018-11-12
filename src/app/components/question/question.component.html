@@ -1,0 +1,21 @@
+<div class="question-container">
+  <div class="row justify-content-md-center text-row">
+    <div class="col-md-12">
+      <span class="highlighted">Q:{{ num + 1 }} </span>{{ question.question | fixQuotes }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <mat-grid-list cols="2" gutterSize="10" rowHeight="8em">
+        <mat-grid-tile *ngFor="let answer of ans; let i = index" colspan="1" rowspan="1">
+          <app-answer [text]="answer" [num]="i" (clicked)="answerClicked($event, i)"></app-answer>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+  <div class="row justify-content-md-center button-row" style="margin-top: 10px">
+    <div class="col-md-6">
+      <button mat-raised-button color="accent" [disabled]="!isCheckable" (click)="buttonClicked()">{{ determineButtonText() }}</button>
+    </div>
+  </div>
+</div>
