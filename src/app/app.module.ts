@@ -9,34 +9,33 @@ import { AppComponent } from './app.component';
 import { AnswerComponent } from './components/answer/answer.component';
 import { QuestionComponent } from './components/question/question.component';
 import { GameComponent } from './components/game/game.component';
-import { MatCardModule, MatInputModule,
-    MatButtonModule, MatButtonToggleModule, MatGridListModule, MatToolbarModule } from '@angular/material';
+import {MatCardModule, MatInputModule,MatButtonModule, MatButtonToggleModule, MatGridListModule, MatToolbarModule} from '@angular/material';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatStepperModule } from './components/material/my-stepper/stepper-module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AnswerComponent,
-    QuestionComponent,
-    GameComponent,
-    FixQuotesPipe,
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    MatStepperModule,
-    MatInputModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatGridListModule,
-    MatCardModule,
-    MatToolbarModule,
-  ],
-  providers: [DataService, ArrayService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AnswerComponent,
+        QuestionComponent,
+        GameComponent,
+        FixQuotesPipe,
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        MatStepperModule,
+        MatInputModule,
+        MatButtonModule,
+        MatButtonToggleModule,
+        MatGridListModule,
+        MatCardModule,
+        MatToolbarModule,
+    ],
+    providers: [DataService, ArrayService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
